@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Detective</title>
+
+    <!-- add favIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon-16x16.png" />
+    <link rel="manifest" href="./Images/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- attached CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- container -->
+        <div class="container">
+            <!-- top header -->
+            <div class="top-header">
+                <!-- title -->
+                <h1 class="title">DevDetective</h1>
+
+                <!-- mode container -->
+                <div class="btn mode-container">
+                    <p data-modeText>Dark</p>
+                    <div>
+                        <img src="Images/moon-icon.svg" loading="lazy" data-modeIcon />
+                    </div>
+                </div>
+            </div>
+
+            <!-- main header -->
+            <div class="main-header">
+                <!-- searchbox -->
+                <div class="searchbox-container">
+                    <input type="search" placeholder="Enter a GitHub username..." autofocus required
+                        class="searchInput" />
+                    <div class="noResult-container">
+                        <p id="noResult">No Search Results</p>
+                    </div>
+                    <button class="btn" type="submit" searchBtn>Search</button>
+                </div>
+
+                <!-- profile info container -->
+                <div class="profileInfo-container">
+                    <!-- image, name,date -->
+                    <div class="profileInfo-header">
+                        <!-- profile image -->
+                        <div class="profileImg-container">
+                            <img src="" loading="lazy" data-profileImg />
+                        </div>
+
+                        <!-- name and date -->
+                        <div class="name-date-container">
+                            <!-- name and userID -->
+                            <div class="name-container">
+                                <p data-profileName></p>
+                                <a href="" data-profileID></a>
+                            </div>
+
+                            <!-- date -->
+                            <p data-joinDate></p>
+                        </div>
+                    </div>
+
+                    <!-- profile bio -->
+                    <p data-profileBio></p>
+
+                    <!-- profile stats -->
+                    <div class="profileStats-container">
+                        <!-- Repos -->
+                        <div class="card">
+                            <p class="card-header">Repos</p>
+                            <a href="#" class="card-stats" data-repos></a>
+                        </div>
+
+                        <!-- Followers -->
+                        <div class="card">
+                            <p class="card-header">Followers</p>
+                            <a href="#" class="card-stats" data-followers></a>
+                        </div>
+
+                        <!-- Followings -->
+                        <div class="card">
+                            <p class="card-header">Followings</p>
+                            <a href="#" class="card-stats" data-followings></a>
+                        </div>
+                    </div>
+
+                    <!-- profile footer -->
+                    <div class="profile-footer">
+                        <!-- Location -->
+                        <div class="footer-item">
+                            <div class="footer-item-icon">
+                                <img src="Images/location-icon.svg" alt="Location" loading="lazy">
+                            </div>
+                            <p data-profileLocation></p>
+                        </div>
+
+                        <!-- Website -->
+                        <div class="footer-item">
+                            <div class="footer-item-icon">
+                                <img src="Images/website-icon.svg" alt="Website" loading="lazy">
+                            </div>
+                            <a href="" data-profileWebsite></a>
+                        </div>
+
+                        <!-- Twitter -->
+                        <div class="footer-item">
+                            <div class="footer-item-icon">
+                                <img src="Images/twitter-icon.svg" alt="Twitter" loading="lazy">
+                            </div>
+                            <a href="" data-profileTwitter></a>
+                        </div>
+
+                        <!-- company -->
+                        <div class="footer-item">
+                            <div class="footer-item-icon">
+                                <img src="Images/company-icon.svg" alt="Company" loading="lazy">
+                            </div>
+                            <p data-profileCompany></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- font-awesome icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- attached JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
