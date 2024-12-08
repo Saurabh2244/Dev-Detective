@@ -5,7 +5,7 @@
 
 The app also supports **Light** and **Dark** modes, providing a personalized user experience.
 
-🌍 **[Live Demo](https://github-insight-detective.netlify.app/)** | 📂 **[Repository](https://github.com/Saurabh2244/Razorpay-Clone)**  
+🌍 **[Live Demo](https://github-insight-detective.netlify.app/)** | 📂 **[Repository](https://github.com/Saurabh2244/Dev-Detective)**  
 
 ---
 
